@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    /* font-family: 'Work Sans', sans-serif; */
+    font-family: 'Popppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+img{
+    width: 100%;
+    height:auto;
+    object-fit: cover;
+}
+
+/* Hiding the Scroll bars */
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .attached{
+      color: #fff;
+      background-color: #111;
+      display: inline-block;
+      font-weight: 100;
+      padding: 10px 20px;
+      opacity: 0.5;
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      right: 0;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+  }
