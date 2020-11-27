@@ -1,19 +1,23 @@
-// Getting the mouse cursor
-const mouseCursor = document.querySelector(".cursor");
-const mouseCursorFollower = document.querySelector(".cursor-follower");
+window.addEventListener("load", () => {
+  const preloader = document.querySelector("#preloader");
+  preloader.style.display = "none";
+  // Getting the mouse cursor
+  const mouseCursor = document.querySelector(".cursor");
+  const mouseCursorFollower = document.querySelector(".cursor-follower");
 
-// Making the cursor mover function
-const cursorMover = (e) => {
-  gsap.to(mouseCursor, {
-    duration: 0,
-    x: e.clientX,
-    y: e.clientY,
-  });
-  gsap.to(mouseCursorFollower, {
-    duration: 0.5,
-    x: e.clientX,
-    y: e.clientY,
-  });
-};
+  // Making the cursor mover function
+  const cursorMover = (e) => {
+    gsap.to(mouseCursor, {
+      duration: 0,
+      x: e.clientX,
+      y: e.clientY,
+    });
+    gsap.to(mouseCursorFollower, {
+      duration: 0.5,
+      x: e.clientX,
+      y: e.clientY,
+    });
+  };
 
-window.addEventListener("mousemove", cursorMover);
+  window.addEventListener("mousemove", cursorMover);
+});
